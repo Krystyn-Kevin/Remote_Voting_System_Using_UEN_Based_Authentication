@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+	body { font-family: Cambria, sans-serif; padding: 30px; }
+</style>
+
+<head>
+    <title>Voting Site</title>
+</head>
+<body>
+    <h2 style="color:lightcoral">Cast Your Vote</h2>
+    <p style="color:lightgreen">Your entry has been verified.</p>
+
+    <form method="POST" action="{{ url_for('submit_vote') }}">
+
+        <h3 style="color:orange">1.CEO</h3>
+        <input type="radio" name="R1" value="Tim Cook" required> Tim Cook<br>
+        <input type="radio" name="R1" value="Sundar Pichai"> Sundar Pichai<br>
+
+        <h3 style="color:orange">2.CAR</h4>
+        <input type="radio" name="R2" value="Tata" required> Tata<br>
+        <input type="radio" name="R2" value="Mahindra"> Mahindra<br>                                                                                      	
+	<h3 style="color:orange">3.BIKE</h5>
+        <input type="radio" name="R3" value="Bajaj" required> Bajaj<br>
+        <input type="radio" name="R3" value="Hero"> Hero<br>
+
+	<input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
